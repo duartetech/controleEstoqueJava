@@ -38,3 +38,10 @@ Este projeto é um sistema de controle de estoque desenvolvido em Java, utilizan
 3. Acesse a tela de **Cadastrar Ferramenta** para adicionar novas ferramentas ao estoque.
 4. Vá para a tela de **Movimentar Estoque** para adicionar, remover ou deletar ferramentas.
 5. Também é possível visualizar o estoque atual na tela de **Visualizar Estoque**.
+
+## Imagens
+
+<img src="https://github.com/duartetech/controleEstoqueJava/blob/main/imgs/login.png?raw=true" alt="Tela Login">
+<img src="https://github.com/duartetech/controleEstoqueJava/blob/main/imgs/principal.png?raw=true" alt="Tela Principal"> 
+<img src="https://github.com/duartetech/controleEstoqueJava/blob/main/imgs/cadastro.png?raw=true" alt="Tela Cadastro"> 
+<img src="https://github.com/duartetech/controleEstoqueJava/blob/main/imgs/movimentar.png?raw=true" alt="Tela Movimentar"> 
