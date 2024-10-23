@@ -20,7 +20,7 @@ Este projeto é um sistema de controle de estoque desenvolvido em Java, utilizan
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/duartetech/controle-estoque-java.git
+   git clone https://github.com/duartetech/controleEstoqueJava.git
    ```
 
 2. Abra o projeto no NetBeans (ou outro IDE de sua escolha).
@@ -29,7 +29,7 @@ Este projeto é um sistema de controle de estoque desenvolvido em Java, utilizan
 
 4. Configure a conexão com o banco de dados no arquivo `Conexao.java`.
 
-5. Execute a classe principal para iniciar o sistema.
+5. Execute a classe **Main** para iniciar o sistema.
 
 ## Como Usar
 
