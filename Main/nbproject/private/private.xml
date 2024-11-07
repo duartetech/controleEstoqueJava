@@ -3,11 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Windows%20Lite%20BR/Desktop/trabalho%20java/Main/src/DAO/MovimentacaoDAO.java</file>
-            <file>file:/C:/Users/Windows%20Lite%20BR/Desktop/trabalho%20java/Main/src/Controller/MovimentacaoController.java</file>
-            <file>file:/C:/Users/Windows%20Lite%20BR/Desktop/trabalho%20java/Main/src/main/Main.java</file>
-            <file>file:/C:/Users/Windows%20Lite%20BR/Desktop/trabalho%20java/Main/src/View/MovimentacaoView.java</file>
-            <file>file:/C:/Users/Windows%20Lite%20BR/Desktop/trabalho%20java/Main/src/View/LoginView.java</file>
+            <file>file:/C:/Users/Windows%20Lite%20BR/Desktop/ProjetoJava-/Main/src/View/BoasVindasView.java</file>
+            <file>file:/C:/Users/Windows%20Lite%20BR/Desktop/ProjetoJava-/Main/src/main/Main.java</file>
+            <file>file:/C:/Users/Windows%20Lite%20BR/Desktop/ProjetoJava-/Main/src/View/LoginView.java</file>
+            <file>file:/C:/Users/Windows%20Lite%20BR/Desktop/ProjetoJava-/Main/src/Banco/Conexao.java</file>
+            <file>file:/C:/Users/Windows%20Lite%20BR/Desktop/ProjetoJava-/Main/src/View/EstoqueView.java</file>
         </group>
     </open-files>
 </project-private>

@@ -17,7 +17,7 @@ public class FerramentaView extends JFrame {
     public FerramentaView() {
         setTitle("Cadastrar Ferramenta");
         setSize(400, 300);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         setLocationRelativeTo(null);
         setLayout(null);
 

@@ -5,6 +5,7 @@
 // BoasVindasView.java
 package View;
 
+import java.awt.Color;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -12,25 +13,32 @@ import java.awt.event.ActionListener;
 public class BoasVindasView extends JFrame {
     public BoasVindasView(String nomeUsuario) {
         setTitle("Boas Vindas");
-        setSize(300, 200);
+        setSize(600, 400);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setLayout(null);
+        // Ajustes para centralizar os componentes
+        int centerX = (getWidth() - 150) / 2; // Largura dos campos (80 + 160 + espaçamento)
+        int startY = 100; // Distância do topo
+        JLabel backgroundLabel = new JLabel(new ImageIcon("./src/View/imgs/sloganredu.jpeg"));
+        backgroundLabel.setLayout(null);  // Define layout nulo para posicionar os componentes sobre a imagem
+        setContentPane(backgroundLabel);
+        
 
         JLabel lblBoasVindas = new JLabel("Bem-vindo, " + nomeUsuario + "!");
         lblBoasVindas.setBounds(10, 10, 200, 25);
         add(lblBoasVindas);
 
-        JButton btnCadastrarFerramenta = new JButton("Cadastrar Ferramenta");
-        btnCadastrarFerramenta.setBounds(50, 50, 200, 25);
+        JButton btnCadastrarFerramenta = new JButton("Cadastrar");
+        btnCadastrarFerramenta.setBounds(centerX, startY, 125, 25);
         add(btnCadastrarFerramenta);
 
-        JButton btnMovimentarEstoque = new JButton("Movimentar Estoque");
-        btnMovimentarEstoque.setBounds(50, 80, 200, 25);
+        JButton btnMovimentarEstoque = new JButton("Movimentar");
+        btnMovimentarEstoque.setBounds(centerX, startY + 40, 125, 25);
         add(btnMovimentarEstoque);
 
-        JButton btnVisualizarEstoque = new JButton("Visualizar Estoque");
-        btnVisualizarEstoque.setBounds(50, 110, 200, 25);
+        JButton btnVisualizarEstoque = new JButton("Visualizar");
+        btnVisualizarEstoque.setBounds(centerX, startY + 80, 125, 25);
         add(btnVisualizarEstoque);
 
         btnCadastrarFerramenta.addActionListener(new ActionListener() {

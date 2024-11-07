@@ -18,29 +18,41 @@ public class LoginView extends JFrame {
         loginController = new LoginController();
        
         setTitle("Login");
-        setSize(300, 200);
+        setSize(600,400);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setLayout(null);
+        //JPanel mainPanel = new JPanel();
+        //Color cor = new Color(255,102,102);
+        //mainPanel.setLayout(null);
+        //mainPanel.setBackground(cor);  // Define o fundo azul
+        //setContentPane(mainPanel);
+        JLabel backgroundLabel = new JLabel(new ImageIcon("./src/View/imgs/sl.jpeg"));
+        backgroundLabel.setLayout(null);  // Define layout nulo para posicionar os componentes sobre a imagem
+        setContentPane(backgroundLabel);
+        
+        // Ajustes para centralizar os componentes
+        int centerX = (getWidth() - 300) / 2; // Largura dos campos (80 + 160 + espaçamento)
+        int startY = 100; // Distância do topo
 
         JLabel lblUsuario = new JLabel("Usuário:");
-        lblUsuario.setBounds(10, 10, 80, 25);
+        lblUsuario.setBounds(centerX, startY, 80, 25);
         add(lblUsuario);
 
         txtUsuario = new JTextField();
-        txtUsuario.setBounds(100, 10, 160, 25);
+        txtUsuario.setBounds(centerX + 90, startY, 160, 25);
         add(txtUsuario);
 
         JLabel lblSenha = new JLabel("Senha:");
-        lblSenha.setBounds(10, 50, 80, 25);
+        lblSenha.setBounds(centerX, startY + 40, 80, 25);
         add(lblSenha);
 
         txtSenha = new JPasswordField();
-        txtSenha.setBounds(100, 50, 160, 25);
+        txtSenha.setBounds(centerX + 90, startY + 40, 160, 25);
         add(txtSenha);
 
         JButton btnLogin = new JButton("Login");
-        btnLogin.setBounds(100, 100, 80, 25);
+        btnLogin.setBounds(centerX + 90, startY + 80, 80, 25);
         add(btnLogin);
 
         btnLogin.addActionListener(e -> {
@@ -56,4 +68,6 @@ public class LoginView extends JFrame {
             }
         });
     }
+            
+
 }
