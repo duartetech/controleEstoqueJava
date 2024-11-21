@@ -1,8 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-// LoginView.java
 package View;
 
 import java.awt.*;
@@ -18,15 +13,11 @@ public class LoginView extends JFrame {
         loginController = new LoginController();
        
         setTitle("Login");
-        setSize(600,400);
+        setSize(629,400);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setLayout(null);
-        //JPanel mainPanel = new JPanel();
-        //Color cor = new Color(255,102,102);
-        //mainPanel.setLayout(null);
-        //mainPanel.setBackground(cor);  // Define o fundo azul
-        //setContentPane(mainPanel);
+       
         JLabel backgroundLabel = new JLabel(new ImageIcon("./src/View/imgs/sl.jpeg"));
         backgroundLabel.setLayout(null);  // Define layout nulo para posicionar os componentes sobre a imagem
         setContentPane(backgroundLabel);
@@ -36,7 +27,9 @@ public class LoginView extends JFrame {
         int startY = 100; // Distância do topo
 
         JLabel lblUsuario = new JLabel("Usuário:");
-        lblUsuario.setBounds(centerX, startY, 80, 25);
+        lblUsuario.setBounds(centerX, startY, 80, 30); // Ajustei o tamanho para acomodar a fonte maior
+        lblUsuario.setFont(new Font("Arial", Font.BOLD, 16));  // Define fonte maior e em negrito
+        lblUsuario.setForeground(Color.BLACK);  // Cor do texto da label
         add(lblUsuario);
 
         txtUsuario = new JTextField();
@@ -44,7 +37,9 @@ public class LoginView extends JFrame {
         add(txtUsuario);
 
         JLabel lblSenha = new JLabel("Senha:");
-        lblSenha.setBounds(centerX, startY + 40, 80, 25);
+        lblSenha.setBounds(centerX, startY + 40, 80, 30); // Ajustei o tamanho para acomodar a fonte maior
+        lblSenha.setFont(new Font("Arial", Font.BOLD, 16));  // Define fonte maior e em negrito
+        lblSenha.setForeground(Color.BLACK);  // Cor do texto da label
         add(lblSenha);
 
         txtSenha = new JPasswordField();
@@ -68,6 +63,4 @@ public class LoginView extends JFrame {
             }
         });
     }
-            
-
 }

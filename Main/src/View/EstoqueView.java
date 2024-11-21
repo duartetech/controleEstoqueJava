@@ -20,7 +20,7 @@ import java.util.List;
 public class EstoqueView extends JFrame {
     public EstoqueView() {
         setTitle("Visualizar Estoque");
-        setSize(400, 300);
+        setSize(629, 400);
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         setLocationRelativeTo(null);
 

@@ -1,10 +1,5 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package View;
 
-// FerramentaView.java
 import Controller.FerramentaController;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -16,41 +11,45 @@ public class FerramentaView extends JFrame {
 
     public FerramentaView() {
         setTitle("Cadastrar Ferramenta");
-        setSize(400, 300);
+        setSize(629, 400);
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         setLocationRelativeTo(null);
         setLayout(null);
 
+        // Ajustes para centralizar os componentes
+        int centerX = (getWidth() - 200) / 2 + 50; // Largura total dos campos
+        int startY = 80; // Distância do topo
+
         JLabel lblNome = new JLabel("Nome:");
-        lblNome.setBounds(30, 30, 100, 25);
+        lblNome.setBounds(centerX - 100, startY, 80, 25); // Ajustado para alinhar com os campos de texto
         add(lblNome);
 
         txtNome = new JTextField();
-        txtNome.setBounds(140, 30, 200, 25);
+        txtNome.setBounds(centerX, startY, 200, 25);
         add(txtNome);
 
         JLabel lblDescricao = new JLabel("Descrição:");
-        lblDescricao.setBounds(30, 70, 100, 25);
+        lblDescricao.setBounds(centerX - 100, startY + 40, 80, 25);
         add(lblDescricao);
 
         txtDescricao = new JTextField();
-        txtDescricao.setBounds(140, 70, 200, 25);
+        txtDescricao.setBounds(centerX, startY + 40, 200, 25);
         add(txtDescricao);
 
         JLabel lblQuantidade = new JLabel("Quantidade:");
-        lblQuantidade.setBounds(30, 110, 100, 25);
+        lblQuantidade.setBounds(centerX - 100, startY + 80, 80, 25);
         add(lblQuantidade);
 
         txtQuantidade = new JTextField();
-        txtQuantidade.setBounds(140, 110, 200, 25);
+        txtQuantidade.setBounds(centerX, startY + 80, 200, 25);
         add(txtQuantidade);
 
         btnCadastrar = new JButton("Cadastrar");
-        btnCadastrar.setBounds(140, 160, 100, 25);
+        btnCadastrar.setBounds(centerX - 50, startY + 140, 100, 25); // Centralizado em relação ao campo de texto
         add(btnCadastrar);
 
         btnVoltar = new JButton("Voltar");
-        btnVoltar.setBounds(250, 160, 100, 25);
+        btnVoltar.setBounds(centerX + 60, startY + 140, 100, 25); // Colocado ao lado do botão de cadastrar
         add(btnVoltar);
 
         // Ação para cadastrar a ferramenta

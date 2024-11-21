@@ -13,7 +13,7 @@ import java.awt.event.ActionListener;
 public class BoasVindasView extends JFrame {
     public BoasVindasView(String nomeUsuario) {
         setTitle("Boas Vindas");
-        setSize(600, 400);
+        setSize(629, 400);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setLayout(null);
@@ -30,15 +30,15 @@ public class BoasVindasView extends JFrame {
         add(lblBoasVindas);
 
         JButton btnCadastrarFerramenta = new JButton("Cadastrar");
-        btnCadastrarFerramenta.setBounds(centerX, startY, 125, 25);
+        btnCadastrarFerramenta.setBounds(centerX, startY + 5, 125, 30);
         add(btnCadastrarFerramenta);
 
         JButton btnMovimentarEstoque = new JButton("Movimentar");
-        btnMovimentarEstoque.setBounds(centerX, startY + 40, 125, 25);
+        btnMovimentarEstoque.setBounds(centerX, startY + 45, 125, 30);
         add(btnMovimentarEstoque);
 
         JButton btnVisualizarEstoque = new JButton("Visualizar");
-        btnVisualizarEstoque.setBounds(centerX, startY + 80, 125, 25);
+        btnVisualizarEstoque.setBounds(centerX, startY + 85, 125, 30);
         add(btnVisualizarEstoque);
 
         btnCadastrarFerramenta.addActionListener(new ActionListener() {
